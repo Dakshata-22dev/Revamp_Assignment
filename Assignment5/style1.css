@@ -1,0 +1,20 @@
+*{
+    color:white;
+    font-family: sans-serif;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image{
+    background-image: url('https://ik.imagekit.io/4z8covdo9/Full stack/todolistbg.png?');
+    width:360px;
+    height:700px;
+    background-size: cover;
+}
+
+.button1{
+    background-color:rgb(254,167,26);
+    padding:7px 14px;
+    font-size:medium;
+    font-weight: 500;
+}
