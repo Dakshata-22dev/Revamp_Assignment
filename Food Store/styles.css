@@ -1,0 +1,12 @@
+.bg-image{
+    background-image: url('https://ik.imagekit.io/5ijj28qkaa/Food%20Store/foodmunch-banner-bg.png');
+    height:100vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-gift{
+    background: rgb(250,248,240);
+background: radial-gradient(circle, rgba(250,248,240,1) 0%, rgba(254,234,153,1) 45%);
+}
