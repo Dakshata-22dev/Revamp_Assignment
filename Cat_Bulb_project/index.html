@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat and Bulb</title>
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex flex-col justify-center items-center bg-black h-[105vh] gap-3">
+        <img src="https://ik.imagekit.io/5ijj28qkaa/Cat%20and%20Bulb%20JS%20project/bulb-go-on-img.png" alt="bulb-img"
+            class="w-[150px]" id="bulb">
+        <img src="https://ik.imagekit.io/5ijj28qkaa/Cat%20and%20Bulb%20JS%20project/cat-img.png" alt="cat-img"
+            class="w-[300px]" id="cat">
+        <!--     <div class="flex flex-col justify-center items-center bg-slate-400 rounded-lg p-4 mx-[650px] gap-4"> -->
+        <!-- Button -->
+        <div class=" bg-slate-400 rounded-lg p-6 px-10 space-y-4 my-6">
+            <p id="para" class="font-[Roboto] font-[500] text-[24px] leading-[29px]  text-white">SWITCHED ON</p>
+            <div class="flex gap-5">
+                <button id="btn-off"
+                    class="font-[Roboto] bg-red-500 px-5 py-1 text-[24px] leading-[36px] rounded-lg border-black border-[1px] text-white">OFF</button>
+                <button id="btn-on"
+                    class="font-[Roboto] bg-green-500 py-1 px-5 text-[24px] leading-[36px] rounded-lg border-black border-[1px] text-white">ON</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const catElement = document.getElementById("cat");
+        const bulbElement = document.getElementById("bulb");
+
+        const paraElement = document.getElementById("para");
+
+        const btnOnElement = document.getElementById("btn-on");
+        const btnOffElement = document.getElementById("btn-off");
+        // On the Bulb
+        btnOnElement.addEventListener("click", () => {
+            bulbElement.src = "https://ik.imagekit.io/5ijj28qkaa/Cat%20and%20Bulb%20JS%20project/bulb-go-on-img.png";
+            catElement.src = "https://ik.imagekit.io/5ijj28qkaa/Cat%20and%20Bulb%20JS%20project/cat-img.png";
+            paraElement.textContent = "SWITCHED ON";
+            btnOnElement.className = "bg-[rgb(203,210,217)] text-white border-black rounded-lg border-[1px] px-5 py-1 text-[24px] font-[500] leading-[36px]";
+            btnOffElement.className= "bg-red-500 text-white border-black rounded-lg border-[1px] px-5 py-1 text-[24px] font-[500] leading-[36px]";
+        });
+        // Off the bulb
+        btnOffElement.addEventListener("click", () => {
+            bulbElement.src = "https://ik.imagekit.io/5ijj28qkaa/Cat%20and%20Bulb%20JS%20project/bulb-go-off-img.png";
+            catElement.src = "https://ik.imagekit.io/5ijj28qkaa/Cat%20and%20Bulb%20JS%20project/cat-eyes-img.png";
+            paraElement.textContent = "SWITCHED OFF";
+            btnOffElement.className = "bg-[rgb(203,210,217)] text-white border-black rounded-lg border-[1px] px-5 py-1 text-[24px] font-[500] leading-[36px]";
+            btnOnElement.className = "bg-green-500 text-white border-black rounded-lg border-[1px] px-5 py-1 text-[24px] font-[500] leading-[36px]";
+        });
+
+    </script>
+</body>
+
+</html>

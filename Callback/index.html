@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Set Interval</h3>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <p id="counter">0</p>
+
+    <h3>Set Timeout</h3>
+    <button id="start1">Start</button>
+    <button id="stop1">Stop</button>
+    <p id="counter1">0</p>
+
+    <script>
+        // Set Interval
+        const StartBtn = document.getElementById("start");
+        const StopBtn = document.getElementById("stop");
+        const counter = document.getElementById("counter");
+
+        let id;
+        StartBtn.addEventListener("click", () => {
+            id = setInterval(() => {
+                counter.textContent = parseInt(counter.textContent) + 1;
+            }, 1000);
+        });
+
+        StopBtn.addEventListener("click", () => {
+            clearInterval(id);
+        });
+        // Set Timeout
+        const StartBtn1 = document.getElementById("start1");
+        const StopBtn1 = document.getElementById("stop1");
+        const counter1 = document.getElementById("counter1");
+
+        let iid;
+        StartBtn1.addEventListener("click", () => {
+            iid = setTimeout(() => {
+                counter1.textContent = parseInt(counter1.textContent) + 1;
+            }, 1000);
+        });
+
+        StopBtn1.addEventListener("click", () => {
+            clearTimeout(iid);
+        });
+
+
+    </script>
+</body>
+
+</html>

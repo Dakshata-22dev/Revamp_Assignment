@@ -18,6 +18,77 @@
 </head>
 
 <body>
+    <!-- NavBar start -->
+        <div class="w-full 2xl:container top-0 fixed bg-white">
+            <div class="w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2">
+                <div class="flex flex-row justify-between items-center  py-4">
+                    <img src="https://ik.imagekit.io/5ijj28qkaa/Food%20Store/food-munch-img.png" alt="logo"
+                        class="h-20">
+                    <div class="md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em"
+                            id="menu">
+                            <path fill="currentColor" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" id="cross"
+                            class="hidden">
+                            <g fill="currentColor" fillRule="evenodd" clipRule="evenodd">
+                                <path
+                                    d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06">
+                                </path>
+                                <path
+                                    d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="hidden md:block" id="content" >
+                    <ul class="flex flex-col justify-center items-center md:flex-row md:justify-between md:items-center gap-5 py-4">
+                        <li class="text-[18px] font-[400] font-[Poppins]"><a href="#why">Why Choose Us?</a></li>
+                        <li class="text-[18px] font-[400] font-[Poppins]"><a href="#menu"> Explore Menu</a></li>
+                        <li class="text-[18px] font-[400] font-[Poppins]"><a href="#payment">Delivery and Payment</a>
+                        </li>
+                        <li class="text-[18px] font-[400] font-[Poppins]"><a href="#follow">Follow Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!-- NavBar end -->
+
+    <!-- <div class="w-full top-0 fixed bg-white">
+        <div class="w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2">
+            <div class="px-5 flex flex-row justify-between items-center w-full">
+                <img src="https://ik.imagekit.io/5ijj28qkaa/Food%20Store/food-munch-img.png" alt="logo" class="h-20">
+                <div class="md:hidden flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em"
+                            id="menu">
+                            <path fill="currentColor" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z"></path>
+                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" id="cross"
+                            class="hidden">
+                            <g fill="currentColor" fillRule="evenodd" clipRule="evenodd">
+                                <path
+                                    d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06">
+                                </path>
+                                <path
+                                    d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0">
+                                </path>
+                            </g>
+                        </svg>
+                </div>
+            </div>
+            <div class="hidden md:hidden w-full" id="content">
+                <ul class="flex flex-row justify-between w-full items-center gap-5 py-4">
+                    <li><a href="#why">Why Choose Us?</a></li>
+                    <li><a href="#menu">Explore Menu</a></li>
+                    <li><a href="#payment">Delivery and Payment</a></li>
+                    <li><a href="#follow">Follow Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    
+
     <!-- Hero Section start -->
     <section class="py-5">
         <div class="2xl:conatiner mx-auto bg-image">
@@ -40,7 +111,7 @@
     <!-- Hero Section end -->
 
     <!-- Why Choose Us Starting-->
-    <section class="py-5">
+    <section class="py-5" id="why">
         <div class="2xl:container mx-auto space-y-7">
             <div class="w-[95%] mx-auto grid grid-cols-1 gap-5">
                 <div>
@@ -107,7 +178,7 @@
     <!--Fresh,Healthy sction end  -->
 
     <!-- Explore Menu start -->
-    <section class="py-5">
+    <section class="py-5" id="menu">
         <div class="2xl:container mx-auto space-y-5">
             <div class="w-[95%] mx-auto">
                 <h1 class="text-[24px] font-[Poppins] font-[800]">Explore Menu</h1>
@@ -129,7 +200,8 @@
                 </div>
                 <!-- Card 2 -->
                 <div class="shadow-lg rounded-xl space-y-1 p-5">
-                    <img src="https://ik.imagekit.io/5ijj28qkaa/Food%20Store/em-soup-img.png" alt="Non veg starters" class="rounded-xl">
+                    <img src="https://ik.imagekit.io/5ijj28qkaa/Food%20Store/em-soup-img.png" alt="Non veg starters"
+                        class="rounded-xl">
                     <h1 class="text-[16px] font-[Poppins] font-[600]">Soup</h1>
                     <div class="flex flex-row items-center justify-start gap-1">
                         <p class="text-[16px] font-[Poppins] font-[400]">View All</p>
@@ -142,7 +214,7 @@
                 <!-- card 3 -->
                 <div class="shadow-lg rounded-xl space-y-1 p-5">
                     <img src="https://ik.imagekit.io/5ijj28qkaa/Food%20Store/em-coffee-bourbon-img.png"
-                        alt="Non veg starters"class="rounded-xl" >
+                        alt="Non veg starters" class="rounded-xl">
                     <h1 class="text-[16px] font-[Poppins] font-[600]">Desserts</h1>
                     <div class="flex flex-row items-center justify-start gap-1">
                         <p class="text-[16px] font-[Poppins] font-[400]">View All</p>
@@ -154,7 +226,8 @@
                 </div>
                 <!-- Card 4 -->
                 <div class="shadow-lg rounded-xl space-y-1 p-5">
-                    <img src="https://ik.imagekit.io/5ijj28qkaa/Food%20Store/em-gluten-img.png" alt="Non veg starters" class="rounded-xl">
+                    <img src="https://ik.imagekit.io/5ijj28qkaa/Food%20Store/em-gluten-img.png" alt="Non veg starters"
+                        class="rounded-xl">
                     <h1 class="text-[16px] font-[Poppins] font-[600]">Salads</h1>
                     <div class="flex flex-row items-center justify-start gap-1">
                         <p class="text-[16px] font-[Poppins] font-[400]">View All</p>
@@ -226,7 +299,7 @@
     <!-- Explore Menu End -->
 
     <!-- Delivery and Payment Start -->
-    <section class="py-5">
+    <section class="py-5" id="payment">
         <div class="2xl:container mx-auto">
             <div class="w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2">
                 <div class="flex flex-col justify-center items-start space-y-5 order-2 md:order-1">
@@ -283,7 +356,7 @@
     <!-- Gift Section End -->
 
     <!-- Follow Us Start -->
-    <section class="py-5">
+    <section class="py-5" id="follow">
         <div class="2xl:container mx-auto space-y-9">
             <div class="w-[95%] mx-auto grid grid-cols-1">
                 <div class="flex flex-col items-center gap-4">
@@ -329,18 +402,42 @@
     <!-- Follow Us end -->
 
     <!-- Footer section start -->
-     <footer class="py-5 bg-[#0D2436]">
+    <footer class="py-5 bg-[#0D2436]">
         <div class="2xl:container mx-auto">
             <div class="w-[95%] mx-auto">
                 <div class="flex flex-col justify-center items-center gap-4">
-                    <img src="https://ik.imagekit.io/5ijj28qkaa/Food%20Store/food-munch-img.png" alt="logo" class="h-32">
+                    <img src="https://ik.imagekit.io/5ijj28qkaa/Food%20Store/food-munch-img.png" alt="logo"
+                        class="h-32">
                     <p class="font-[Poppins] text-[16px] font-[400] text-white">orderfood@foodmunch.com</p>
-                    <p class="font-[Poppins] text-[16px] font-[400] text-[white]">123 Ayur Vigyan Nagar, New Delhi, India.</p>
+                    <p class="font-[Poppins] text-[16px] font-[400] text-[white]">123 Ayur Vigyan Nagar, New Delhi,
+                        India.</p>
                 </div>
             </div>
         </div>
-     </footer>
-     <!-- Footer section end -->
+    </footer>
+    <!-- Footer section end -->
+
+
+    <!-- DOM Manipulatiob fro hamburger and cross icon -->
+    <script>
+
+        const menuIcon = document.getElementById("menu");
+        const crossIcon = document.getElementById("cross");
+        const content = document.getElementById("content");
+
+        menuIcon.addEventListener("click",()=>{
+            menuIcon.classList.add("hidden");
+            crossIcon.classList.remove("hidden");
+            content.classList.remove("hidden");
+        });
+
+       crossIcon.addEventListener("click",()=>{
+            menuIcon.classList.remove("hidden");
+            crossIcon.classList.add("hidden");
+            content.classList.add("hidden");
+       });
+
+    </script>
 </body>
 
 </html>
